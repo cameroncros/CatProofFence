@@ -1,0 +1,7 @@
+imutils
+opencv-python
+websocket-client==0.40.0
+datetime
+future
+requests
+python-vlc
