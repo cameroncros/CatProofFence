@@ -114,6 +114,9 @@ def main(args):
             bytes = cv2.imencode(".png", frame)[1].tostring()
 
             send_message(BytesIO(bytes))
+            # Sleep for 10 seconds, to avoid spamming messages
+            time.sleep(10)
+
         # cv2.imshow("Thresh", thresh)
         # cv2.imshow("Frame Delta", frame_delta)
         key = cv2.waitKey(1) & 0xFF
